@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css1/fontawesome.css">
+    <link rel="stylesheet" href="assets/css1/templatemo-onix-digital.css">
+    <link rel="stylesheet" href="assets/css1/animated.css">
+    <link rel="stylesheet" href="assets/css1/owl.css">
+
+
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Mohamed chiheb-portfolio</title>
+      <style>
+         .work__card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .work__subtitle {
+            display: block;
+            margin-top: 10px;
+        }
+     </style>
+     <style>
+      .our-videos .videos-left-dec img {
+         width: 220px;
+         height: 471px;
+         left: 0;
+         top: 120px;
+         position: absolute;
+       }
+       
+       .our-videos .videos-right-dec img {
+         width: 730px;
+         height: 523px;
+         right: 0;
+         top: 45px;
+         position: absolute;
+       }
+       
+       .our-videos {
+         position: relative;
+         margin-bottom: -30px;
+         padding-top: 120px;
+         margin-top: 0px;
+       }
+       
+       .our-videos .naccs {
+         position: relative;
+       }
+       
+       .our-videos .naccs .menu div {
+         margin-bottom: 30px;
+         cursor: pointer;
+         position: relative;
+         vertical-align: middle;
+         transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+       }
+       
+       .our-videos .naccs .menu div {
+         transition: all 0.3s;
+       }
+       
+       .our-videos .naccs .menu div.active .thumb .inner-content {
+         text-align: center;
+         width: 100%;
+         height: 100%;
+         border-radius: 23px;
+       }
+       
+       .our-videos .naccs .menu div.active .thumb .inner-content h4 {
+         top: 40%;
+         transform: translateY(-55%);
+         position: relative;
+       }
+       
+       .our-videos .naccs .menu div.active .thumb .inner-content span {
+         display: block;
+         position: relative;
+         top: 55%;
+         transform: translateY(-55%);
+       }
+       
+       .our-videos ul.nacc {
+         position: relative;
+         min-height: 100%;
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+       }
+       
+       .our-videos ul.nacc li {
+         opacity: 0;
+         transform: translateX(-50px);
+         position: absolute;
+         list-style: none;
+         transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+       }
+       
+       .our-videos ul.nacc li.active {
+         transition-delay: 0.3s;
+         position: relative;
+         z-index: 2;
+         opacity: 1;
+         transform: translateX(0px);
+       }
+       
+       .our-videos ul.nacc li {
+         width: 100%;
+       }
+       
+       .our-videos .nacc .thumb {
+         position: relative;
+         border-radius: 23px;
+       }
+       
+       .our-videos .nacc .thumb iframe {
+         border-radius: 23px;
+         height: 675px;
+       }
+       
+       .our-videos .nacc .thumb .overlay-effect {
+         background: rgb(159, 127, 255);
+         background: linear-gradient(105deg, rgb(106, 63, 191) 0%, rgbrgb(106, 63, 191) 100%);
+         display: inline-block;
+         position: absolute;
+         left: 0;
+         top: 0;
+         border-top-left-radius: 23px;
+         border-bottom-right-radius: 23px;
+         padding: 35px 30px;
+         text-align: center;
+       }
+       
+       .our-videos .nacc .thumb .overlay-effect h4 {
+         font-size: 20px;
+         margin-top: 5px;
+         font-weight: 700;
+         color: #fff;
+         margin-bottom: 10px;
+       }
+       
+       .our-videos .nacc .thumb .overlay-effect span {
+         font-size: 15px;
+         color: #fff;
+       }
+       
+       .our-videos .menu .thumb {
+         position: relative;
+       }
+       
+       .our-videos .menu .thumb .inner-content {
+         background: rgb(159, 127, 255);
+         background: linear-gradient(105deg, rgb(159, 127, 255) 0%, rgb(159, 127, 255) 100%);
+         border-top-left-radius: 23px;
+         border-bottom-right-radius: 23px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         padding: 20px 30px;
+         transition: all 0.3s;
+       }
+       
+       .our-videos .menu .thumb .inner-content h4 {
+         font-size: 20px;
+         font-weight: 700;
+         color: #fff;
+         transition: all 0.3s;
+       }
+       
+       .our-videos .menu .thumb .inner-content span {
+         font-size: 15px;
+         color: #fff;
+         font-weight: 400;
+         display: none;
+         transition: all 0.3s;
+         
+       }
+       .col-lg-4 {
+         flex: 0 0 auto;
+         width: 33.3333333333%;
+       }
+       .row1 {
+         --bs-gutter-x: 1.5rem;
+         --bs-gutter-y: 0;
+         display: flex;
+         flex-wrap: wrap;
+         margin-top: calc(var(--bs-gutter-y) * -1);
+         margin-right: calc(var(--bs-gutter-x) / -2);
+         margin-left: calc(var(--bs-gutter-x) / -2);
+       }
+       
+       
+     </style>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+          <!--==================== HEADER ====================-->
+          <header class="header header-pages" id="header">
+            <nav class="nav container">
+               <a href="index.html" class="nav__logo">Mohamed Chiheb Eddine<br> benammar</a>
+               <div class="nav__menu" id="nav-menu">
+                  <ul class="nav__list">
+                     <li class="nav__item">
+                        <a href="index.html" class="nav__link"><br>Home</a>
+                     </li>
+   
+                     <li class="nav__item">
+                        <a href="about.html" class="nav__link"><br>About me</a>
+                     </li>
+   
+                     <li class="nav__item">
+                        <a href="work.html" class="nav__link"><br>Portfolio</a>
+                     </li>
+   
+                     <li class="nav__item">
+                        <a href="contact.html" class="nav__link"><br>Contact me</a>
+                     </li>
+                  </ul>
+                  <!--hathi lil bouton close-->
+                  <div class="nav__close" id="nav-close">
+                     <i class="ri-close-line"></i>
+                  </div>
+               </div>
+               
+               <div class="nav__actions">
+                  <br>
+                  <!--hathi lil ecran bech nzidou hak el moon -->
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+               <!--------------------------------------------->
+                  <div class="nav__toggle" id="nav-toggle">
+                     <i class="ri-apps-2-line"></i>
+                  </div>
+               </div>
+            </nav>
+            
+         </header>
+         <div id="video" class="our-videos section">
+            <div class="videos-left-dec">
+              <img src="assets/images/videos-left-dec.png" alt="">
+            </div>
+            <div class="s-right-dec">
+              <img src="assets/images/videos-right-dec.png" alt="">
+            </div>
+            
+                        
+                
+                  <div class="naccs">
+                    
+                      <div class="row1">
+                        <div class="col-lg-8">
+                          <ul class="nacc">
+                            <li class="active">
+                              <div>
+                                <div class="thumb">
+                                  <video width="800" height="800" controls>
+                                    <source width="100%" height="auto" src="assets/workWave/video workWave.mp4" type="video/mp4">
+                                   
+                                  </video>
+                                  <div class="overlay-effect">
+                                    <h4>Video from a Website</h4>
+                                    
+                                  </div>
+                                </div>
+                                <br><br>
+                                <h4> Description: Work Wave is a platform designed for freelancers and enterprises.<br>
+                                    She gives freelancers the ability to look for and apply for projects,<br>
+                                    and she also helps entreprises find freelancers who are most suited for their projects.</h4>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <div class="thumb"><br><br><br><br><br><br><br>
+                                  <img src="assets/workWave/login et sign up.png" alt="">
+                                  <div class="overlay-effect">
+                                    <h4>Login and Sign up</h4>
+                                    
+                                  </div>
+                                </div>
+                                <br><br>
+                                <h4> Description: Work Wave is a platform designed for freelancers and enterprises.<br>
+                                     She gives freelancers the ability to look for and apply for projects,<br>
+                                     and she also helps entreprises find freelancers who are most suited for their projects.</h4>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <div class="thumb"><br><br><br><br><br><br><br>
+                                  <img src="assets/workWave/new start.png " alt="">
+                                  <div class="overlay-effect">
+                                    <h4>Page New project start-up</h4>
+                                    
+                                  </div>
+                                </div>
+                                <br><br>
+                                <h4> Description: Work Wave is a platform designed for freelancers and enterprises.<br>
+                                     She gives freelancers the ability to look for and apply for projects,<br>
+                                     and she also helps entreprises find freelancers who are most suited for their projects.</h4>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <div class="thumb"><br><br><br><br><br><br><br>
+                                  <img src="assets/workWave/dermande.png" alt="">
+                                  <div class="overlay-effect">
+                                    <h4>Page demande start-up</h4>
+                                    
+                                  </div>
+                                </div>
+                                <br><br>
+                                <h4> Description: Work Wave is a platform designed for freelancers and enterprises.<br>
+                                     She gives freelancers the ability to look for and apply for projects,<br>
+                                     and she also helps entreprises find freelancers who are most suited for their projects..</h4>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <div class="thumb"><br><br><br><br><br><br><br>
+                                  <img src="assets/workWave/work progress stratup.png" alt="">
+                                  <div class="overlay-effect">
+                                    <h4>Page WorkProgress Start-up</h4>
+                                    
+                                  </div>
+                                </div>
+                                <br><br>
+                                <h4> Description: Work Wave is a platform designed for freelancers and enterprises.<br>
+                                     She gives freelancers the ability to look for and apply for projects,<br>
+                                     and she also helps entreprises find freelancers who are most suited for their projects.</h4>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <div class="thumb"><br><br><br><br><br><br><br>
+                                  <img src="assets/workWave/profile startup.png " alt="">
+                                  <div class="overlay-effect">
+                                    <h4>Page Profile start-up</h4>
+                                    
+                                  </div>
+                                </div>
+                                <br><br>
+                                <h4> Description: Work Wave is a platform designed for freelancers and enterprises.<br>
+                                     She gives freelancers the ability to look for and apply for projects,<br>
+                                     and she also helps entreprises find freelancers who are most suited for their projects.</h4>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <div class="thumb"><br><br><br><br><br><br><br>
+                                  <img src="assets/workWave/home .png " alt="">
+                                  <div class="overlay-effect">
+                                    <h4>Page Home freelancer</h4>
+                                    
+                                  </div>
+                                </div>
+                                <br><br>
+                                <h4> Description: Work Wave is a platform designed for freelancers and enterprises.<br>
+                                     She gives freelancers the ability to look for and apply for projects,<br>
+                                     and she also helps entreprises find freelancers who are most suited for their projects.</h4>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <div class="thumb"><br><br><br><br><br><br><br>
+                                  <img src="assets/workWave/curent projects .png" alt="">
+                                  <div class="overlay-effect">
+                                    <h4>Page workprogress freelance</h4>
+                                    
+                                  </div>
+                                </div>
+                                <br><br>
+                                <h4> Description: Work Wave is a platform designed for freelancers and enterprises.<br>
+                                     She gives freelancers the ability to look for and apply for projects,<br>
+                                     and she also helps entreprises find freelancers who are most suited for their projects.</h4>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="menu">
+                            <div class="active">
+                              <div class="thumb">
+                                <img src="assets/workWave/logo.png" alt="">
+                                <div class="inner-content">
+                                  <h4>Video from a Website</h4>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="thumb">
+                                <img src="assets/workWave/login et sign up.png" alt="">
+                                <div class="inner-content">
+                                  <h4>Login and Sign up</h4>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="thumb">
+                                <img src="assets/workWave/new start.png" alt="">
+                                <div class="inner-content">
+                                  <h4>Page New project start-up</h4>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="thumb">
+                                <img src="assets/workWave/dermande.png" alt="">
+                                <div class="inner-content">
+                                  <h4>Page demande start-up</h4>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="thumb">
+                                <img src="assets/workWave/work progress stratup.png" alt="">
+                                <div class="inner-content">
+                                  <h4>Page WorkProgress Start-up</h4>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="thumb">
+                                <img src="assets/workWave/profile startup.png" alt="">
+                                <div class="inner-content">
+                                  <h4>Page Profile start-up</h4>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="thumb">
+                                <img src="assets/workWave/home1.png" alt="">
+                                <div class="inner-content">
+                                  <h4>Page Home freelancer</h4>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="thumb">
+                                <img src="assets/workWave/curent projects .png" alt="SEO Work">
+                                <div class="inner-content">
+                                  <h4>Page workprogress freelance</h4>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          
+                        </div>   
+                                  
+                      </div>
+                    
+                  
+              
+                      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </div>
+
+         
+         
+            
+         
+
+
+
+
+
+         <footer class="footer">
+            <div class="footer__container container grid">
+               <div class="footer__content grid">
+                  <a href="index.html" class="footer__logo">Chiheb</a>
+                   <ul class="footer__links">
+                     <li>
+                        <a href="about.html" class="footer__link">About Me</a>
+                     </li>
+   
+                     <li>
+                        <a href="work.html" class="footer__link">Portfolio</a>
+                     </li>
+   
+                     <li>
+                        <a href="contact.html" class="footer__link">Contact Me</a>
+                     </li>
+                   </ul>
+                   <div class="footer__social">
+                    <a href="https://www.facebook.com/profile.php?id=100004474756575" target="blank" class="footer__social-link">
+                       <i class="ri-facebook-circle-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/chiheb_benammar/" target="blank" class="footer__social-link">
+                       <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohamed-chiheb-eddine-benammar-0aa456284/" target="blank" class="footer__social-link">
+                       <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                 </div>
+               </div>
+               <span class="footer__copy">
+                  &#169; All Rights Reserved By mohamed Chiheb Eddine
+               </span>
+            </div>
+         </footer>
+   
+   
+         <!--=============== MAIN JS ===============-->
+         <script src="assets/js/main.js"></script>
+
+         <script src="vendor/jquery/jquery.min.js"></script>
+         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js1/owl-carousel.js"></script>
+  <script src="assets/js1/animation.js"></script>
+  <script src="assets/js1/imagesloaded.js"></script>
+  <script src="assets/js1/custom.js"></script>
+
+
+         <script>
+          
+            // Acc
+              $(document).on("click", ".naccs .menu div", function() {
+                var numberIndex = $(this).index();
+          
+                if (!$(this).is("active")) {
+                    $(".naccs .menu div").removeClass("active");
+                    $(".naccs ul li").removeClass("active");
+          
+                    $(this).addClass("active");
+                    $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+          
+                    var listItemHeight = $(".naccs ul")
+                      .find("li:eq(" + numberIndex + ")")
+                      .innerHeight();
+                    $(".naccs ul").height(listItemHeight + "px");
+                  }
+              });
+            
+         </script>
+         
+   </body>
+</html>
